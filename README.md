@@ -1,10 +1,10 @@
-Bike Share Demand Prediction API
+## Bike Share Demand Prediction API
 A containerized machine learning API that predicts bike sharing demand using a Random Forest model, deployed on AWS Lambda.
 
-Overview
+## Overview: 
 This project serves real-time predictions of bike share demand based on time, weather, and seasonal features. The model is trained offline, serialized, and deployed in a Docker container to AWS Lambda using the container image feature.
 
-Architecture
+## Architecture
 JSON input with 16 features
 
 Processed by AWS Lambda container
@@ -13,20 +13,16 @@ Model returns predicted bike demand
 
 Response formatted in JSON
 
-Features
+## Features
 Serverless ML inference (AWS Lambda)
 
 Fast response time (~200ms warm start)
 
 Scalable auto-execution
 
-RESTful JSON API
-
-CORS support
-
 Built-in health and error handling
 
-Requirements
+## Requirements
 Docker
 
 AWS CLI with permissions
@@ -46,7 +42,8 @@ bike-share-aws/
 ├── deploy_to_aws.ps1
 ├── api_gateway_example.py
 └── README.md
-Installation & Setup
+
+## Installation & Setup
 Clone the repo and navigate into it
 
 Build the container:
