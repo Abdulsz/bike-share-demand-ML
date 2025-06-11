@@ -52,18 +52,18 @@ docker build -t bike-share-lambda .
 (Optional) Run locally:
 docker run --rm -p 9000:8080 bike-share-lambda:latest
 
-Deployment Options
+## Deployment Options
 
-Manual
+Manual: 
 Create an ECR repo and push your container image
 
 Create a Lambda function via the AWS Console using the ECR image
 
-Local & Lambda Testing
+## Local & Lambda Testing
 Use test_container.py to send test input to a locally running container.
 For Lambda, use the AWS CLI to invoke with a JSON payload.
 
-Model Details
+## Model Details
 Algorithm: Random Forest Regressor
 
 Input Features: 16 weather/time-related variables
@@ -74,7 +74,7 @@ Size: ~7.9MB
 
 Trained with scikit-learn 1.6.1
 
-Performance
+## Performance
 Container Size: ~1.74GB
 
 Cold Start Time: 2-3 seconds
@@ -85,7 +85,7 @@ Memory: 512MB
 
 Auto-scaled concurrency
 
-Security
+## Security
 Uses environment variables, not hardcoded secrets
 
 IAM role-based AWS access
